@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MZNavigationController.h"
 
-@interface MZDetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface MZDetailViewController : UIViewController <MZNavigationChildViewController, UISplitViewControllerDelegate>
 
 @property (strong, nonatomic) id detailItem;
+@property (assign, nonatomic) NSInteger itemIndex;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

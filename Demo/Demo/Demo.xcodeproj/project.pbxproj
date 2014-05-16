@@ -23,6 +23,7 @@
 		EDF574AF19261CBB00E57B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF5748B19261CBA00E57B8C /* UIKit.framework */; };
 		EDF574B719261CBB00E57B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDF574B519261CBB00E57B8C /* InfoPlist.strings */; };
 		EDF574B919261CBB00E57B8C /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF574B819261CBB00E57B8C /* DemoTests.m */; };
+		EDF574C519261F1200E57B8C /* MZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF574C419261F1200E57B8C /* MZNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		EDF574B419261CBB00E57B8C /* DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoTests-Info.plist"; sourceTree = "<group>"; };
 		EDF574B619261CBB00E57B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EDF574B819261CBB00E57B8C /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
+		EDF574C319261F1200E57B8C /* MZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZNavigationController.h; sourceTree = "<group>"; };
+		EDF574C419261F1200E57B8C /* MZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		EDF5747B19261CBA00E57B8C = {
 			isa = PBXGroup;
 			children = (
+				EDF574C219261F1200E57B8C /* UIView */,
 				EDF5748D19261CBA00E57B8C /* Demo */,
 				EDF574B219261CBB00E57B8C /* DemoTests */,
 				EDF5748619261CBA00E57B8C /* Frameworks */,
@@ -158,6 +162,16 @@
 				EDF574B519261CBB00E57B8C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDF574C219261F1200E57B8C /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				EDF574C319261F1200E57B8C /* MZNavigationController.h */,
+				EDF574C419261F1200E57B8C /* MZNavigationController.m */,
+			);
+			name = UIView;
+			path = ../../UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +276,7 @@
 				EDF574A419261CBA00E57B8C /* MZDetailViewController.m in Sources */,
 				EDF5749419261CBA00E57B8C /* main.m in Sources */,
 				EDF574A119261CBA00E57B8C /* MZMasterViewController.m in Sources */,
+				EDF574C519261F1200E57B8C /* MZNavigationController.m in Sources */,
 				EDF5749819261CBA00E57B8C /* MZAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -69,4 +69,14 @@
     self.masterPopoverController = nil;
 }
 
+
+
+#pragma mark - MZNavigationChildViewController
+- (BOOL)shouldHideNavigationBar
+{
+    BOOL shouldHide = (self.itemIndex % 2 == 0);
+    return shouldHide;
+}
+
+
 @end

@@ -13,6 +13,9 @@
 @interface MZMasterViewController () {
     NSMutableArray *_objects;
 }
+
+@property (nonatomic, assign) NSInteger selIndex;
+
 @end
 
 @implementation MZMasterViewController
@@ -108,6 +111,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.selIndex = indexPath.row;
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         NSDate *object = _objects[indexPath.row];
         self.detailViewController.detailItem = object;
@@ -120,7 +124,14 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
+        [[segue destinationViewController] setItemIndex:indexPath.row];
     }
+}
+
+#pragma mark - MZNavigationChildViewController
+- (BOOL)shouldHideNavigationBar
+{
+    return self.selIndex % 2 != 0;
 }
 
 @end

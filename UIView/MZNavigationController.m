@@ -27,6 +27,13 @@
     return self;
 }
 
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.supportPopGesture = YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
